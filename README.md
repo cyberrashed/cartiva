@@ -1,10 +1,30 @@
 # Cartiva
 
+![Cartiva storefront and operations workspace](docs/screenshots/hero.jpg)
+
 A multi-vendor marketplace for the US market, built with Next.js and PostgreSQL. It covers a storefront with variants and a bag, a real checkout with stock holds and Stripe payments (sandbox), discount codes and shipping zones, customer accounts, seller onboarding, and an operations workspace for staff.
 
 **Live demo:** https://cartiva-tau.vercel.app. Open `/demo` to sign in as a shopper or as the store admin with one click, and pay with the test card `4242 4242 4242 4242`.
 
 Payments run in Stripe's test mode only: the server refuses any key that is not `sk_test_…`, so no real money can move. Products and sellers are sample data.
+
+## Screenshots
+
+| Product page with variants | Review and pay |
+| --- | --- |
+| ![Product page with color and set options, price, SKU and stock](docs/screenshots/product.jpg) | ![Delivery options for the state, a discount code and server totals](docs/screenshots/checkout.jpg) |
+| **Payment on Stripe Checkout (sandbox)** | **Order placed after Stripe confirms** |
+| ![Stripe Checkout in sandbox mode with the discount and the test card](docs/screenshots/stripe-payment.jpg) | ![Confirmation page with the order number and items](docs/screenshots/confirmation.jpg) |
+| **Orders workspace** | **Order detail: ledger and stock movements** |
+| ![Orders with payment state, totals and filters](docs/screenshots/admin-orders.jpg) | ![Order detail with balanced ledger journals and stock movements](docs/screenshots/order-ledger.jpg) |
+| **Product editor** | **Shipping zones and rates** |
+| ![Product editor with details, photos, options and a live preview](docs/screenshots/product-editor.jpg) | ![Shipping zones by state with rates and free-over amounts](docs/screenshots/shipping.jpg) |
+| **Discount codes** | **Seller applications** |
+| ![Discount codes with conditions, status and uses](docs/screenshots/discount-codes.jpg) | ![Seller application review queue](docs/screenshots/seller-applications.jpg) |
+
+**On a phone**
+
+![Home, product, bag, checkout, confirmation and orders on a phone](docs/screenshots/phones.jpg)
 
 ## Features
 
