@@ -1,0 +1,32 @@
+.settings-editor .ops-page-heading { align-items: flex-start; }
+.settings-editor .editor-section h2, .shipping-group-title { font-size: 16px; }
+.shipping-group-title { margin: 32px 0 16px; }
+.shipping-add { margin-bottom: 8px; }
+.shipping-states { border: 0; padding: 0; margin: 20px 0 0; min-width: 0; }
+.shipping-states > legend { font-size: 13px; font-weight: 500; margin-bottom: 10px; padding: 0; }
+.shipping-states > legend span { color: var(--ops-muted); font-weight: 400; font-size: 12px; margin-left: 8px; }
+.shipping-states > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 6px; }
+.shipping-states label { display: flex; align-items: center; gap: 5px; min-height: 32px; padding: 0 6px; border: 1px solid var(--ops-rule); border-radius: 4px; font-size: 12px; font-variant-numeric: tabular-nums; cursor: pointer; }
+.shipping-states label:has(input:checked) { border-color: var(--ops-text); }
+.shipping-states label.is-taken { opacity: .45; cursor: not-allowed; }
+.settings-editor .shipping-states input, .settings-editor .shipping-toggle input, .settings-editor .shipping-active input { width: 14px; height: 14px; min-height: 0; padding: 0; margin: 0; accent-color: var(--ops-text); }
+.shipping-states[aria-invalid="true"] > div { outline: 1px solid var(--editor-error); outline-offset: 4px; border-radius: 4px; }
+.shipping-rates { margin-top: 24px; display: grid; gap: 10px; }
+.shipping-rate-head, .shipping-rate { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, .8fr) minmax(0, .8fr) minmax(0, .9fr) 40px 64px; gap: 10px; align-items: center; }
+.shipping-rate-head { color: var(--ops-muted); font-size: 11px; }
+.shipping-rate { border: 0; padding: 0; margin: 0; min-width: 0; }
+.shipping-rate .editor-remove { grid-column: auto; padding: 4px 0; }
+.shipping-rate-error { grid-column: 1 / -1; }
+.shipping-days { display: flex; align-items: center; gap: 6px; color: var(--ops-muted); }
+.shipping-days input { text-align: center; padding-left: 4px; padding-right: 4px; }
+.shipping-toggle { display: flex; justify-content: center; }
+.shipping-active { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 13px; }
+.coupon-form { margin-top: 8px; }
+.coupon-form .editor-field-pair:first-of-type { margin-top: 0; }
+.coupon-actions { display: flex; gap: 10px; margin-top: 20px; }
+@media (max-width: 760px) {
+  .shipping-rate-head { display: none; }
+  .shipping-rate { grid-template-columns: 1fr 1fr; padding-bottom: 12px; border-bottom: 1px solid var(--ops-rule); }
+  .shipping-rate > label:first-child { grid-column: 1 / -1; }
+  .settings-editor .ops-page-heading { flex-direction: column; }
+}

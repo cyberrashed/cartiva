@@ -1,0 +1,10 @@
+# Never upload local secrets, credentials or QA material to the deployment.
+.env*
+!.env.example
+.local
+tests
+coverage
+.next
+node_modules
+*.tsbuildinfo
+compose.yaml

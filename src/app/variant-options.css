@@ -1,0 +1,8 @@
+.variant-options .color-options { margin:22px 0 18px; }
+.variant-option-values { display:flex; flex-wrap:wrap; gap:8px; }
+.variant-option-values button { min-height:44px; flex-wrap:wrap; }
+.variant-option-values button small { color:var(--muted); font-size:12px; }
+.variant-sku { font-size:13px; color:var(--muted); margin:0 0 10px; overflow-wrap:anywhere; }
+.variant-price-unavailable { font-size:16px; color:var(--muted); }
+.variant-photo-unavailable { display:grid; place-items:center; height:100%; min-height:190px; padding:24px; color:var(--muted); text-align:center; }
+.variant-set-note { font-size:14px; color:var(--muted); margin:-6px 0 18px; }

@@ -1,0 +1,73 @@
+.seller-review { max-width: 1200px; }
+.seller-review-heading { align-items: flex-start; }
+.seller-review-button { min-height: 40px; padding: 8px 14px; border: 1px solid #5a5145; border-radius: 5px; color: var(--ops-text); background: transparent; }
+.seller-review-button:hover:not(:disabled) { background: var(--ops-raised); }
+.seller-review-button.is-primary { color: #17130d; background: var(--ops-accent); border-color: var(--ops-accent); }
+.seller-review-button.is-primary:hover:not(:disabled) { background: #d9b871; }
+.seller-review-button:disabled { color: var(--ops-muted); border-color: var(--ops-rule); background: var(--ops-surface); }
+.seller-review-message { padding: 12px 16px; margin-bottom: 20px !important; border: 1px solid var(--ops-rule); border-radius: 5px; color: var(--ops-text); background: var(--ops-surface); overflow-wrap: anywhere; }
+.seller-review-message.is-error { border-left: 3px solid #d98e84; }
+.seller-review-message:focus { outline: 2px solid var(--ops-accent); outline-offset: 3px; }
+/* At a 1,148px canvas: 340px queue + 24px gutter + 784px detail = 1,148px. */
+.seller-review-grid { display: grid; grid-template-columns: minmax(280px, 340px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.seller-review-list, .seller-review-detail { min-width: 0; border: 1px solid var(--ops-rule); border-radius: 8px; overflow: hidden; }
+.seller-review-list-heading { padding: 20px; }
+.seller-review-list-heading h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.seller-review-list-heading h2 span { color: var(--ops-muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+.seller-review-list-heading label { display: block; color: var(--ops-muted); margin: 20px 0 8px; font-size: 12px; }
+.seller-review-list-heading select { width: 100%; min-height: 40px; border: 1px solid #5a5145; border-radius: 5px; color: var(--ops-text); background: var(--ops-surface); padding: 8px 10px; }
+.seller-review-list ul { list-style: none; margin: 0; padding: 0; max-height: 640px; overflow-y: auto; }
+.seller-review-list li { border-top: 1px solid var(--ops-rule); }
+.seller-review-row { width: 100%; text-align: left; border: 0; padding: 17px 20px; color: var(--ops-text); background: transparent; }
+.seller-review-row.is-selected { background: var(--ops-raised); }
+.seller-review-row:hover:not(:disabled) { box-shadow: inset 0 0 0 1px #6b6151; }
+.seller-review-row:focus-visible { outline-offset: -4px; }
+.seller-review-row > strong, .seller-review-row-applicant { display: block; overflow-wrap: anywhere; }
+.seller-review-row-applicant { color: var(--ops-muted); margin-top: 3px; font-size: 13px; }
+.seller-review-row-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.seller-review-row time { font-size: 12px; color: var(--ops-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.seller-review-status { color: var(--ops-muted); font-size: 12px; flex: none; white-space: nowrap; }
+.seller-review-status.is-submitted { color: var(--ops-accent); }
+.seller-review-detail { padding: 24px; background: var(--ops-surface); }
+.seller-review-detail-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.seller-review-detail-heading h2 { font-size: 21px; overflow-wrap: anywhere; min-width: 0; }
+.seller-review-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 24px; margin: 24px 0; }
+.seller-review-facts dt { color: var(--ops-muted); font-size: 12px; margin-bottom: 5px; }
+.seller-review-facts dd { margin: 0; overflow-wrap: anywhere; }
+.seller-review-facts dd span { display: block; color: var(--ops-muted); font-size: 13px; margin-top: 2px; }
+.seller-review-wide { grid-column: 1 / -1; }
+.seller-review :is(h3, label) { font-size: 14px; font-weight: 500; }
+.seller-review-description, .seller-review-feedback { margin-top: 24px; }
+.seller-review-description p, .seller-review-feedback p { white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 8px; color: var(--ops-muted); }
+.seller-review-feedback { border-left: 2px solid #61513b; padding-left: 16px; }
+.seller-review-decision { border-top: 1px solid var(--ops-rule); margin-top: 24px; padding-top: 24px; }
+.seller-review-decision > p { color: var(--ops-muted); margin-top: 8px; }
+.seller-review-decision label { display: block; margin-top: 20px; margin-bottom: 8px; }
+.seller-review-decision textarea { width: 100%; display: block; resize: vertical; min-height: 96px; border: 1px solid #5a5145; border-radius: 5px; color: var(--ops-text); background: var(--ops-ground); padding: 12px; font: inherit; line-height: 1.5; }
+.seller-review-decision textarea:focus-visible { outline: 2px solid var(--ops-accent); outline-offset: 3px; }
+.seller-review-decision textarea:disabled { color: var(--ops-muted); }
+.seller-review-decision #review-feedback-help { font-size: 12px; }
+.seller-review-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.seller-review-outcome { margin-top: 24px !important; padding-top: 20px; border-top: 1px solid var(--ops-rule); color: var(--ops-muted); }
+.seller-review-empty { padding: 24px 20px; }
+.seller-review-empty p { margin-top: 10px; color: var(--ops-muted); max-width: 42ch; }
+.seller-review-detail > .seller-review-empty { padding: 0; }
+.seller-review-back { display: none; }
+@media (max-width: 1100px) {
+  .seller-review-grid { grid-template-columns: minmax(250px, 300px) minmax(0, 1fr); gap: 20px; }
+  .seller-review-detail { padding: 20px; }
+  .seller-review-detail-heading { flex-wrap: wrap; gap: 8px; }
+}
+@media (max-width: 800px) {
+  .seller-review-grid { grid-template-columns: minmax(0, 1fr); }
+  .seller-review-grid:not(.is-detail-open) .seller-review-detail, .seller-review-grid.is-detail-open .seller-review-list { display: none; }
+  .seller-review-back { display: block; min-height: 44px; color: var(--ops-text); background: transparent; border: 0; padding: 0 0 16px; margin-bottom: 16px; }
+  .seller-review-heading { flex-wrap: wrap; gap: 16px; }
+  .seller-review-heading h1 { font-size: 24px; }
+  .seller-review-button, .seller-review-list-heading select { min-height: 44px; }
+  .seller-review-list ul { max-height: none; }
+}
+@media (max-width: 420px) {
+  .seller-review-facts { grid-template-columns: minmax(0, 1fr); }
+  .seller-review-actions { flex-direction: column; }
+}

@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794231422627,
+      "tag": "0000_harsh_baron_strucker",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794404005526,
+      "tag": "0001_fat_jubilee",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794533835054,
+      "tag": "0002_catalog_inventory",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794559478025,
+      "tag": "0003_orders_payments",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794564848637,
+      "tag": "0004_checkout_settings",
+      "breakpoints": true
+    }
+  ]
+}

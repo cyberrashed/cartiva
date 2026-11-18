@@ -1,0 +1,5 @@
+.purchase-sku { margin-top:4px; color:var(--muted); font-size:12px; overflow-wrap:anywhere; }
+.purchase-variant-meta { margin-top:5px; color:var(--muted); font-size:14px; }
+.purchase-item-copy { min-width:0; }
+.purchase-missing-image { display:flex; align-items:center; justify-content:center; height:100%; min-height:inherit; padding:8px; color:var(--muted); background:var(--surface); font-size:12px; text-align:center; }
+.receipt-item>span:last-child { flex-shrink:0; }
